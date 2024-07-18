@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
+/* default styles */
+*{
+    margin: 0;
+}
+
+.container{
+    max-width: 85%;
+    margin: 4rem auto;
+    border-radius: 1rem;
+}
+
+h3{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 800;
+    line-height: normal;
+    color: white;
+
+}
+
+p{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    color: white;
+}
+
+/* navbar */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h3{
+    width: 280px;
+    color: rgb(230, 83, 60);
+    text-align: left;
+}
+
+.nav-options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-bar p{
+    cursor: pointer;
+}
+
+.home{
+    padding: 8px 20px 8px 20px;
+    border-radius: 46px;
+    background-color: rgb(230, 83, 60);
+}
+
+.ham-burger{
+    color: white;
+    display: none;
+}
+
+/* banner */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    background-color: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+.text-content{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.text-content h3{
+    width: 420px;
+    text-align: left;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 5rem;
+}
+
+.text-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#shape{
+    font-family: 'Miama', sans-serif;
+    font-size: 68px;
+    font-weight: 400;
+}
+
+.image{
+    
+}
+
+.image img{
+    width: 100%;
+}
+
+.banner-card{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+}
+
+.one h3{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.banner-card p{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.one{
+    position: absolute;
+    left: 1057px;
+    top: 330px;
+}
+
+.two{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    position: absolute;
+    left: 755px;
+    top: 625px;
+
+}
+
+.two h3{
+    font-size: 18px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+
+.btn-primary{
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    padding: 16px 40px 16px 40px;
+    background-color: rgb(230, 83, 60);
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-now{
+    display: none;
+}
+
+.black-bg{
+    border: 1px solid white;
+    background-color: black;
+    margin-left: .5rem;
+}
+
+/* resposive design */
+@media screen and (max-width: 576px) {
+    .nav-options{
+        display: none;
+    }
+    
+    .ham-burger{
+        color: white;
+        display: block;
+    }
+
+    .text-content{
+        width: 95%;
+    }
+
+    .text-content h3{
+        text-align: left;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 2.5rem;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .btn-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .btn-primary{
+        width: 156px;
+        height: 54px;
+        padding: 7px 14px;
+    }
+
+    .btn-club{
+        display: none;
+    }
+
+    .btn-now{
+        display: block;
+    }
+
+    .one{
+        position: absolute;
+        left: 230px;
+        top: 580px;
+    }
+
+    .two{
+        position: absolute;
+        left: 50px;
+        top: 820px;
+    }
+}
+
