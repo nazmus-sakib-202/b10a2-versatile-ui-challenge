@@ -34,6 +34,11 @@ p{
     color: white;
 }
 
+/* header */
+header{
+    background-image: linear-gradient(180.00deg, rgb(17, 17, 17, 0.2) 0%,rgba(119, 119, 119, 0.03) 100%);
+}
+
 /* navbar */
 .nav-bar{
     display: flex;
@@ -48,17 +53,29 @@ p{
 }
 
 .nav-options{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 4px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 3rem;
 }
 
+.nav-options p{
+    font-weight: 400;
+}
+
+#about{
+    padding-right: 15px;
+}
+
 .nav-bar p{
     cursor: pointer;
 }
 
-.home{
+#home{
+    font-weight: 600;
     padding: 8px 20px 8px 20px;
     border-radius: 46px;
     background-color: rgb(230, 83, 60);
@@ -74,7 +91,6 @@ p{
     display: flex;
     justify-content: space-between;
     gap: 5rem;
-    background-color: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 
 .text-content{
@@ -106,11 +122,13 @@ p{
 }
 
 .image{
-    
-}
-
-.image img{
     width: 100%;
+    max-width: 349px;
+    height: 580px;
+    background-image: url(../images/Images\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .banner-card{
@@ -185,7 +203,141 @@ p{
     margin-left: .5rem;
 }
 
-/* resposive design */
+/* habits */
+.habits{
+
+}
+
+.habits p{
+    font-size: 16px;
+}
+
+.habits-image{
+    display: flex;
+}
+
+.habits-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.habits-text p{
+    width: 60%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.frame-common{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.circle-frame-box{
+    border: 2px solid gray;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.frame-box-one{
+    background-image: url(../images/image\ 3.png);
+}
+
+.frame-box-two{
+    background-image: url(../images/image\ 2.png);
+}
+
+.frame-box-three{
+    background-image: url(../images/image\ 4.png);
+}
+
+.frame-box-four{
+    background-image: url(../images/image\ 5.png);
+}
+
+.frame-common h3{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.frame-common p{
+    width: 78%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* run */
+.run-extra{
+    display: grid;
+    grid-template-columns: 1.5fr .5fr;
+    background-color: rgb(35, 33, 33);
+    border-radius: 20px;
+}
+
+.run-text{
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    gap: 20px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.run-text h3{
+    max-width: 50%;
+    text-align: left;
+}
+
+.run-text p{
+    max-width: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.run-image{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.run-img{
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: 300px;
+    margin: 25px;
+    border-radius: 20px;
+}
+
+.run-img img{
+    transform: scale(3.4);
+    position: absolute;
+    top: 41%;
+    right: 44%;
+    width: 100%;
+}
+
+/* responsive design */
 @media screen and (max-width: 576px) {
     .nav-options{
         display: none;
@@ -197,7 +349,7 @@ p{
     }
 
     .text-content{
-        width: 95%;
+        width: 100%;
     }
 
     .text-content h3{
@@ -231,6 +383,14 @@ p{
         display: block;
     }
 
+    .image{
+        width: 100%;
+    }
+
+    .image img{
+        width: 100%;
+    }
+
     .one{
         position: absolute;
         left: 230px;
@@ -241,6 +401,61 @@ p{
         position: absolute;
         left: 50px;
         top: 820px;
+    }
+
+    .habits-image{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .habits-text h3{
+        font-size:26px;
+        width: 90%;
+    }
+
+    .habits-text p{
+        width: 90%;
+    }
+
+    .run-text{
+        margin: 25px 25px 0 25px;
+        padding: 0;
+    }
+
+    .run-text h3{
+        max-width: 70%;
+        font-size: 26px;
+    }
+
+    .run-text p{
+        max-width: 97%;
+    }
+
+    .btn-join{
+        width: 100%;
+    }
+
+    .run-extra{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .run-img{
+        position: relative;
+        overflow: hidden;
+        max-width: 350px;
+        max-height: 180px;
+        margin: 25px;
+        border-radius: 20px;
+    }
+    
+    .run-img img{
+        transform: scale(1.5);
+        position: absolute;
+        top: 12%;
+        right: 18%;
+        width: 100%;
     }
 }
 
