@@ -417,6 +417,68 @@ header{
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* footer */
+.footer{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-parent-container{
+    margin-bottom: 0;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr .5fr .5fr;
+    padding-top: 65px;
+    padding-bottom: 80px;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 443px;
+}
+
+.footer-logo p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-nav h3{
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-nav p{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright{
+    text-align: center;
+    font-size: small;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
 /* responsive design */
 @media screen and (max-width: 576px) {
     .nav-options{
@@ -540,6 +602,12 @@ header{
 
     .team-grid{
         grid-template-columns: 1fr;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
