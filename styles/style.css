@@ -333,6 +333,119 @@ header{
     width: 100%;
 }
 
+/* bmi */
+
+.bmi-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+    max-width: 671px;
+    max-height: 120px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.bmi-text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.chart-input-container{
+    background-color: rgb(34, 34, 34);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.chart-input{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+caption{
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+td, th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    text-align: left;
+}
+
+td{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+th{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.bmi-input{
+    max-width: 577px;
+}
+
+.bmi-input h3{
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.bmi-input p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.grid-bmi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    gap: 10px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.bmi-box{
+    max-width: 282.5px;
+    max-height: 48px;
+    padding: 12px 40px 12px 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bmi-box input, 
+.bmi-box select{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    outline: none;
+    appearance: none;
+}
+
+.bmi-box-5{
+    grid-column: 1/ span 2;
+    max-width: 577px;
+}
+
 /* team */
 .team{
     display: flex;
@@ -438,6 +551,11 @@ header{
     flex-direction: column;
     gap: 20px;
     max-width: 443px;
+}
+
+.footer-logo h3{
+    font-size: 70px;
+    font-weight: 800;
 }
 
 .footer-logo p{
@@ -608,6 +726,23 @@ hr{
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .bmi-text{
+        max-width: 353px;
+    }
+
+    .chart-input{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .grid-bmi{
+        grid-template-columns: 170.5px 170.5px;
+    }
+
+    .bmi-box-5{
+        max-width: 353px;
     }
 }
 
