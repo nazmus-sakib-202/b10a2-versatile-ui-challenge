@@ -443,13 +443,21 @@ th{
     font-weight: 400;
 }
 
-.bmi-box input, 
-.bmi-box select{
+.bmi-box input{
+    width: 100%;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.6);
     border: none;
     outline: none;
-    appearance: none;
+}
+
+.bmi-box select{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    outline: none;
 }
 
 .bmi-box-5{
@@ -541,6 +549,40 @@ th{
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* creative */
+.creative{
+    border: 2px solid salmon;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.gender-tables > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.gender-tables > h3{
+    margin-bottom: 60px;
+}
+
+.map-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-container > h3{
+    margin-bottom: 30px;
+}
+
+iframe{
+    width: 95%;
+    max-height: 300px;
+    border-radius: 15px;    
+}
+
 /* footer */
 .footer{
     background-color: rgba(255, 255, 255, 0.1);
@@ -621,6 +663,7 @@ hr{
 
     .text-content{
         width: 100%;
+        margin-top: 40px;
     }
 
     .text-content h3{
@@ -760,5 +803,29 @@ hr{
 
     .bmi-box-5{
         max-width: 353px;
+    }
+
+    .creative h3{
+        font-size: 26px;
+    }
+
+    .gender-tables > div tr, td, th, ol{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .gender-tables > div > .table > table > tbody > tr > td > ol{
+        /* border: 2px solid salmon; */
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid salmon; */
+        padding-right: 20px;
+        text-align: start;
+        width: 70%;
+    }
+
+    .gender-tables > div{
+        display: flex;
+        flex-direction: column;
     }
 }
